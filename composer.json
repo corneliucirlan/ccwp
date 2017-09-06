@@ -1,0 +1,14 @@
+{
+    "name": "corneliucirlan/ccwp",
+    "description": "An Object Oriented WordPress starter framework.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Corneliu Cîrlan",
+            "email": "corneliu@corneliucirlan.com"
+        }
+    ],
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    }
+}

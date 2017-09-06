@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/corneliucirlan/ccwp/issues"
   },
-  "homepage": "https://github.com/corneliucirlan/ccwp#readme"
+  "homepage": "https://github.com/corneliucirlan/ccwp#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
 }
