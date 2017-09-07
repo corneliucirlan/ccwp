@@ -2,8 +2,10 @@
 
     namespace ccwp;
 
+    use ccwp\setup\setup;
     use ccwp\setup\enqueue;
     use ccwp\setup\menus;
+    use ccwp\setup\remove;
 
     class Init
     {
@@ -29,8 +31,10 @@
             self::$loaded = true;
 
             // Call classes
+            new Setup();
             new Enqueue();
             new Menus();
+            new Remove();
         }
     }
 
