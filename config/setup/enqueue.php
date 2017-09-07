@@ -18,7 +18,7 @@
         public function enqueueScripts()
         {
             // Deregister the built-in version of jQuery from WordPress
-            // wp_deregister_script( 'jquery' );
+            // wp_deregister_script('jquery');
 
             // CSS
             wp_enqueue_style('main', get_template_directory_uri().'/assets/css/style.min.css', array(), '1.0.0', 'all');
@@ -27,9 +27,9 @@
             wp_enqueue_script('main', get_template_directory_uri().'/assets/js/main.min.js', array(), '1.0.0', true);
 
             // Extra
-            if (is_singular() && comments_open() && get_option('thread_comments')) {
+            if (is_singular() && comments_open() && get_option('thread_comments')):
                 wp_enqueue_script('comment-reply');
-            }
+            endif;
         }
     }
 

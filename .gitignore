@@ -73,6 +73,7 @@ typings/
 ### Sass ###
 .sass-cache/
 *.css.map
+*.js.map
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -94,5 +95,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
 
 # End of https://www.gitignore.io/api/sass,node,windows,composer
