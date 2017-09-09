@@ -16,7 +16,7 @@
             add_filter('nav_menu_css_class', array($this, 'updateNavItemClasses'), 10, 2);
 
             // Modify navigation items' anchor classes
-            add_filter('walker_nav_menu_start_el', 'updateNavItemAnchorClasses', 10, 4);
+            add_filter('walker_nav_menu_start_el', array($this, 'updateNavItemAnchorClasses'), 10, 4);
         }
 
         /**

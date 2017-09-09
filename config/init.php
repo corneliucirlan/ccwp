@@ -6,6 +6,8 @@
     use ccwp\setup\enqueue;
     use ccwp\setup\menus;
     use ccwp\setup\remove;
+    use ccwp\core\tags;
+    use ccwp\core\widgets;
 
     class Init
     {
@@ -35,6 +37,8 @@
             new Enqueue();
             new Menus();
             new Remove();
+            new Tags();
+            new Widgets();
         }
     }
 

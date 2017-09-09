@@ -8,6 +8,9 @@
      * @package ccwp
      */
 
+    // Security check
+    if (!defined('ABSPATH')) exit;
+
 ?>
 
         </div>
@@ -20,7 +23,7 @@
                             if (has_nav_menu('primary')):
                                 $args = array(
                                     'theme_location' => 'primary',
-                                    'menu' => 'header-menu',
+                                    'menu' => 'primary',
                                     'container' => 'ul',
                                     'menu_class' => 'footer-menu',
                                     'echo' => true,
