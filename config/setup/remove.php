@@ -10,8 +10,8 @@
         public function __construct()
         {
             // Remove CSS/JS version
-            add_filter('style_loader_src', 'removeScriptsVersion', 10, 2);
-        	add_filter('script_loader_src', 'removeScriptsVersion', 10, 2);
+            add_filter('style_loader_src', array($this, 'removeScriptsVersion'), 10, 2);
+        	add_filter('script_loader_src', array($this, 'removeScriptsVersion'), 10, 2);
 
             // Remove WP version
             remove_action('wp_head', 'wp_generator');
