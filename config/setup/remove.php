@@ -17,7 +17,7 @@
             remove_action('wp_head', 'wp_generator');
 
             // Remove Windows Live Writer Manifest Link
-        	remove_action( 'wp_head', 'wlwmanifest_link');
+        	remove_action('wp_head', 'wlwmanifest_link');
 
             // Remove Weblog Client Link
         	remove_action('wp_head', 'rsd_link');

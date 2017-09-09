@@ -8,6 +8,7 @@
     use ccwp\setup\remove;
     use ccwp\core\tags;
     use ccwp\core\widgets;
+    use ccwp\core\cpt;
 
     class Init
     {
@@ -39,6 +40,7 @@
             new Remove();
             new Tags();
             new Widgets();
+            new CPT();
         }
     }
 
