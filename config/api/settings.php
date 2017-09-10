@@ -87,7 +87,7 @@
     	 * @param  array  $scripts file paths or wp related keywords of embedded files
     	 * @param  array $page    pages id where to load scripts
     	 */
-    	public static function admin_enqueue($scripts = array(), $pages = array())
+    	public static function adminEnqueue($scripts = array(), $pages = array())
     	{
     		if (empty($scripts))
     			return;
