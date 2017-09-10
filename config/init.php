@@ -1,14 +1,21 @@
 <?php
 
+    /**
+     * Init class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp;
 
+    use ccwp\core\tags;
+    use ccwp\core\widgets;
+    use ccwp\core\cpt;
+    use ccwp\api\settings;
     use ccwp\setup\setup;
     use ccwp\setup\enqueue;
     use ccwp\setup\menus;
     use ccwp\setup\remove;
-    use ccwp\core\tags;
-    use ccwp\core\widgets;
-    use ccwp\core\cpt;
 
     class Init
     {
@@ -34,13 +41,14 @@
             self::$loaded = true;
 
             // Call classes
+            new Tags();
+            new Widgets();
+            new CPT();
+            new Settings();
             new Setup();
             new Enqueue();
             new Menus();
             new Remove();
-            new Tags();
-            new Widgets();
-            new CPT();
         }
     }
 

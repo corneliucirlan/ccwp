@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Custom Post Type class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\core;
 
     class CPT

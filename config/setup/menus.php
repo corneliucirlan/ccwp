@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Menus class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\setup;
 
     class Menus

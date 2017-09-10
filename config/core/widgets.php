@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Widgets class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\core;
 
     class Widgets

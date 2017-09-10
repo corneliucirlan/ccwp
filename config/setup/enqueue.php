@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Enqueue class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\setup;
 
     class Enqueue

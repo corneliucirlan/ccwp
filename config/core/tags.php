@@ -1,12 +1,18 @@
 <?php
 
+    /**
+     * Tags class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\core;
 
     class Tags
     {
-        /*
-            Contrusct class to activate actions and hooks as soon as the class is initialized
-        */
+        /**
+         * Contrusct class to activate actions and hooks as soon as the class is initialized
+         */
         public function __construct()
         {
             add_action('edit_category', array($this, 'categoryTransientFlusher'));

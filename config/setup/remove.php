@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Remove class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\setup;
 
     class Remove

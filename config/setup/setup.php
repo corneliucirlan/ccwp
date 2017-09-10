@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * Setup class
+     *
+     * @package ccwp
+     */
+
     namespace ccwp\setup;
 
     class Setup
