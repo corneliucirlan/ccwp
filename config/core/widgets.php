@@ -15,7 +15,7 @@
          */
         public function __construct()
         {
-            add_action('widget_init', array($this, 'initWidgets'));
+            add_action('widgets_init', array($this, 'initWidgets'));
         }
 
         /**
