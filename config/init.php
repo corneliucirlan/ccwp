@@ -16,6 +16,7 @@
     use ccwp\setup\enqueue;
     use ccwp\setup\menus;
     use ccwp\setup\remove;
+    use ccwp\setup\login;
 
     class Init
     {
@@ -49,6 +50,7 @@
             new Enqueue();
             new Menus();
             new Remove();
+            new Login();
         }
     }
 
