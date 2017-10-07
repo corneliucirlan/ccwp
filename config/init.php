@@ -12,6 +12,7 @@
     use ccwp\core\widgets;
     use ccwp\core\cpt;
     use ccwp\api\settings;
+    use ccwp\api\customizer;
     use ccwp\setup\setup;
     use ccwp\setup\enqueue;
     use ccwp\setup\menus;
@@ -46,6 +47,7 @@
             new Widgets();
             new CPT();
             new Settings();
+            new Customizer();
             new Setup();
             new Enqueue();
             new Menus();
