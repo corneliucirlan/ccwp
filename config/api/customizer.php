@@ -36,6 +36,6 @@
     	 */
     	public function preview()
     	{
-    		wp_enqueue_script('customizer', get_template_directory_uri() . '/assets/js/customizer.js', array('customize-preview'), '1.0.0', true);
+    		wp_enqueue_script('customizer', get_template_directory_uri().'/assets/js/customizer.min.js', array('jquery', 'customize-preview'), '1.0.0', true);
     	}
     }
