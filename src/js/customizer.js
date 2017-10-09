@@ -11,37 +11,25 @@
 
 (function($) {
 
-	// Site title and description.
-	wp.customize('blogname', updateSiteText('.site-title a', value));
-	wp.customize('blogdescription', updateSiteText('.site-description', value));
-
-	function updateSiteText(selector, value)
-    {
-		value.bind(function(to) {
-			$(selector).text(to);
-		});
-	}
-
-	// Header text color.
-	wp.customize('header_textcolor', function(value) {
-		value.bind(function(to) {
-			if ('blank' === to)
-                    {
-        				$('.site-title a, .site-description').css({
-        					'clip': 'rect(1px, 1px, 1px, 1px)',
-        					'position': 'absolute'
-                        });
-                    }
-                else
-                    {
-        				$('.site-title a, .site-description').css({
-        					'clip': 'auto',
-        					'position': 'relative'
-        				});
-        				$('.site-title a, .site-description').css({
-        					'color': to
-        				});
-        			}
+	// Update the site title in real time...
+	wp.customize('blogname', function(value) {
+		value.bind(function(newval) {
+			$('.navbar-brand').html(newval);
 		});
 	});
+
+	//Update the site description in real time...
+	wp.customize('blogdescription', function(value) {
+		value.bind(function(newval) {
+			$('.site-description').html(newval);
+		});
+	});
+
+	//Update site background color...
+	wp.customize('background_color', function(value) {
+		value.bind(function(newval) {
+			$('body').css('background-color', newval );
+		});
+	});
+
 }(jQuery));
