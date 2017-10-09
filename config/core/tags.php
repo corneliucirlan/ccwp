@@ -114,3 +114,5 @@
             delete_transient('ccwp_categories');
         }
     }
+
+?>
